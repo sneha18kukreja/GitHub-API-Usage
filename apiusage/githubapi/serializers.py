@@ -3,5 +3,5 @@ from .models import SearchUsers
 
 class SearchSerializer(serializers.ModelSerializer):
     class Meta:
-        login = SearchUsers
-        fields = ('login', 'url')
+        model = SearchUsers
+        fields = '__all__'

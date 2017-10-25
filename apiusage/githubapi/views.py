@@ -16,6 +16,7 @@ def save_user(request):
 			name = form.cleaned_data['name']
 			r = requests.get('https://api.github.com/users/'+name)
 			rjson = r.json()
+			serializer = SearchSerializer(data = rjson)
 			return render(request, 'user-search.html',{'saveuser':rjson})
 
 	else:
