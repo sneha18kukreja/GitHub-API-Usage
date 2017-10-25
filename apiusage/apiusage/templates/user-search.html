@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <ul>
+        <li>Username - {{ saveuser.login }}</li>
+        <li> login url -{{ saveuser.url }}</li>
+        <li>created profile date -{{ saveuser.created_at}}</li>
+
+    </ul>
+     <img src="{{ saveuser.avatar_url }}" />
+{% endblock %}
