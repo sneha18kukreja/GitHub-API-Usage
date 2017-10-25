@@ -8,6 +8,6 @@ from .models import SearchUsers
 class SearchUsersAdmin(admin.ModelAdmin):
     list_display = ('login', 'url',)
     list_filter = ('login',)
-
+    search_fields = ('login',)
 
 admin.site.register(SearchUsers,SearchUsersAdmin)

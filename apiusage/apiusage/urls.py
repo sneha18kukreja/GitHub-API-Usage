@@ -18,7 +18,6 @@ from django.contrib import admin
 from githubapi.views import save_user
 
 urlpatterns = [
-    url(r'^', save_user),
+    url(r'^post/', save_user),
     url(r'^admin/', admin.site.urls),
-    
 ]
